@@ -1,0 +1,1785 @@
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aldi Yudha Septiana — Civil Engineering Portfolio</title>
+  <meta name="description"
+    content="Portofolio profesional Aldi Yudha Septiana — Mahasiswa Teknik Sipil Universitas Pakuan. Quantity Surveyor (QS), Site Engineer, Quality Control (QC), dan Project Engineer." />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: '#102A43',
+              dark: '#0A1C2E',
+              light: '#1E3A5F',
+              muted: '#334E68',
+            },
+            gold: {
+              DEFAULT: '#C8A24A',
+              light: '#DFC27D',
+              soft: '#FBF7EC',
+            },
+            skyaccent: {
+              DEFAULT: '#38BDF8',
+              dark: '#0284C7',
+              soft: '#F0F9FF',
+            },
+          },
+          fontFamily: {
+            heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            soft: '0 10px 30px -10px rgba(16, 42, 67, 0.08)',
+            card: '0 14px 35px -12px rgba(16, 42, 67, 0.12)',
+            navy: '0 12px 28px -8px rgba(16, 42, 67, 0.35)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    :root {
+      --navy: #102A43;
+      --navy-dark: #0A1C2E;
+      --gold: #C8A24A;
+      --sky: #38BDF8;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1F2933;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    .font-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* Engineering Blueprint Grid Background for Hero */
+    .hero-blueprint {
+      background-color: #102A43;
+      background-image:
+        linear-gradient(rgba(56, 189, 248, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56, 189, 248, 0.06) 1px, transparent 1px),
+        radial-gradient(circle at 82% 24%, rgba(56, 189, 248, 0.14), transparent 42%),
+        radial-gradient(circle at 14% 82%, rgba(200, 162, 74, 0.12), transparent 40%);
+      background-size: 44px 44px, 44px 44px, 100% 100%, 100% 100%;
+    }
+
+    /* Subtle architectural dot grid for light sections */
+    .bg-subtle-grid {
+      background-image: radial-gradient(rgba(16, 42, 67, 0.07) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+
+    /* Scroll Reveal Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1), transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 {
+      transition-delay: 0.08s;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: 0.16s;
+    }
+
+    .reveal-delay-3 {
+      transition-delay: 0.24s;
+    }
+
+    /* Navbar Active Link Underline */
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background-color: #C8A24A;
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    /* Hover Elevation for Cards */
+    .hover-card {
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .hover-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px -15px rgba(16, 42, 67, 0.15);
+      border-color: rgba(200, 162, 74, 0.55);
+    }
+
+    /* Placeholder Frame Pattern */
+    .placeholder-frame {
+      background-image: repeating-linear-gradient(-45deg,
+          rgba(16, 42, 67, 0.025),
+          rgba(16, 42, 67, 0.025) 10px,
+          rgba(16, 42, 67, 0.055) 10px,
+          rgba(16, 42, 67, 0.055) 20px);
+    }
+
+    .placeholder-frame-dark {
+      background-image: repeating-linear-gradient(-45deg,
+          rgba(255, 255, 255, 0.03),
+          rgba(255, 255, 255, 0.03) 10px,
+          rgba(255, 255, 255, 0.06) 10px,
+          rgba(255, 255, 255, 0.06) 20px);
+    }
+
+    /* Modal Animation */
+    .modal-backdrop {
+      transition: opacity 0.25s ease;
+    }
+
+    .modal-panel {
+      transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.25s ease;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #F0F4F8;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #9FB3C8;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #102A43;
+    }
+  </style>
+</head>
+
+<body class="antialiased selection:bg-navy selection:text-white">
+
+  <!-- ==================== STICKY NAVBAR ==================== -->
+  <header id="navbar"
+    class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-navy/95 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Brand Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div
+            class="w-10 h-10 rounded-lg bg-white/10 border border-gold/40 flex items-center justify-center text-gold font-heading font-bold text-sm tracking-wider group-hover:bg-gold group-hover:text-navy transition-colors">
+            AYS
+          </div>
+          <div class="leading-tight">
+            <span class="block text-white font-heading font-bold text-sm sm:text-base tracking-wide">ALDI YUDHA
+              S.</span>
+            <span class="block text-[11px] text-skyaccent/90 tracking-widest uppercase">Civil Engineering</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-7" aria-label="Navigasi Utama">
+          <a href="#home"
+            class="nav-link active text-sm font-medium text-white/90 hover:text-white transition-colors">Home</a>
+          <a href="#about"
+            class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">About</a>
+          <a href="#education"
+            class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Education</a>
+          <a href="#experience"
+            class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Experience</a>
+          <a href="#skills"
+            class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Skills</a>
+          <a href="#certificates"
+            class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Certificates</a>
+          <a href="#contact"
+            class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Contact</a>
+        </nav>
+
+        <!-- Desktop CTA & Mobile Menu Button -->
+        <div class="flex items-center gap-3">
+          <a href="#contact"
+            class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gold text-navy font-heading font-semibold text-xs uppercase tracking-wider hover:bg-gold-light transition-colors">
+            Hubungi Saya
+          </a>
+          <button id="mobile-menu-btn" type="button" aria-label="Buka Menu" aria-expanded="false"
+            class="lg:hidden p-2 rounded-lg text-white/90 hover:bg-white/10 transition-colors">
+            <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-navy-dark border-t border-white/10">
+      <div class="px-4 py-4 space-y-1">
+        <a href="#home"
+          class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/90 hover:bg-white/10">Home</a>
+        <a href="#about"
+          class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/80 hover:bg-white/10">About</a>
+        <a href="#education"
+          class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/80 hover:bg-white/10">Education</a>
+        <a href="#experience"
+          class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/80 hover:bg-white/10">Experience</a>
+        <a href="#skills"
+          class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/80 hover:bg-white/10">Skills</a>
+        <a href="#certificates"
+          class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/80 hover:bg-white/10">Certificates</a>
+        <a href="#contact"
+          class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-gold hover:bg-white/10">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="relative hero-blueprint pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden text-white">
+      <!-- Architectural & Infrastructure SVG Background Silhouette -->
+      <div class="pointer-events-none absolute inset-0 overflow-hidden opacity-20" aria-hidden="true">
+        <svg class="absolute bottom-0 right-0 w-full max-w-4xl h-auto text-skyaccent" viewBox="0 0 900 420" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <!-- Structural Bridge & High-Rise Wireframe -->
+          <path d="M40 390 L880 390" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 6" />
+          <!-- Tower 1 -->
+          <rect x="520" y="90" width="95" height="300" stroke="currentColor" stroke-width="1.2" />
+          <line x1="520" y1="140" x2="615" y2="140" stroke="currentColor" stroke-width="0.8" />
+          <line x1="520" y1="190" x2="615" y2="190" stroke="currentColor" stroke-width="0.8" />
+          <line x1="520" y1="240" x2="615" y2="240" stroke="currentColor" stroke-width="0.8" />
+          <line x1="520" y1="290" x2="615" y2="290" stroke="currentColor" stroke-width="0.8" />
+          <line x1="520" y1="340" x2="615" y2="340" stroke="currentColor" stroke-width="0.8" />
+          <line x1="567.5" y1="90" x2="567.5" y2="390" stroke="currentColor" stroke-width="0.8" />
+          <!-- Tower 2 -->
+          <rect x="640" y="45" width="115" height="345" stroke="#C8A24A" stroke-width="1.2" />
+          <line x1="640" y1="95" x2="755" y2="95" stroke="#C8A24A" stroke-width="0.7" />
+          <line x1="640" y1="145" x2="755" y2="145" stroke="#C8A24A" stroke-width="0.7" />
+          <line x1="640" y1="195" x2="755" y2="195" stroke="#C8A24A" stroke-width="0.7" />
+          <line x1="640" y1="245" x2="755" y2="245" stroke="#C8A24A" stroke-width="0.7" />
+          <line x1="640" y1="295" x2="755" y2="295" stroke="#C8A24A" stroke-width="0.7" />
+          <line x1="640" y1="345" x2="755" y2="345" stroke="#C8A24A" stroke-width="0.7" />
+          <!-- Cable-Stayed Bridge Structure -->
+          <path d="M120 390 L220 180 L320 390" stroke="currentColor" stroke-width="1.5" />
+          <line x1="220" y1="180" x2="220" y2="390" stroke="currentColor" stroke-width="1.2" />
+          <line x1="220" y1="180" x2="420" y2="335" stroke="currentColor" stroke-width="0.9" />
+          <line x1="220" y1="210" x2="380" y2="335" stroke="currentColor" stroke-width="0.8" />
+          <line x1="220" y1="240" x2="340" y2="335" stroke="currentColor" stroke-width="0.8" />
+          <line x1="220" y1="180" x2="70" y2="335" stroke="currentColor" stroke-width="0.9" />
+          <line x1="220" y1="210" x2="110" y2="335" stroke="currentColor" stroke-width="0.8" />
+          <line x1="50" y1="335" x2="490" y2="335" stroke="#C8A24A" stroke-width="1.8" />
+          <!-- Crane Silhouette -->
+          <line x1="795" y1="390" x2="795" y2="115" stroke="currentColor" stroke-width="1.3" />
+          <line x1="735" y1="130" x2="875" y2="130" stroke="currentColor" stroke-width="1.3" />
+          <line x1="795" y1="115" x2="865" y2="130" stroke="currentColor" stroke-width="0.9" />
+          <line x1="795" y1="115" x2="745" y2="130" stroke="currentColor" stroke-width="0.9" />
+        </svg>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+          <!-- Left Column: Intro & CTAs -->
+          <div class="lg:col-span-7 space-y-6">
+            <div
+              class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-medium tracking-wide text-skyaccent">
+              <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+              Terbuka untuk Peluang Karier di Bidang Konstruksi
+            </div>
+
+            <div>
+              <p class="text-gold font-heading font-semibold text-sm sm:text-base tracking-[0.16em] uppercase mb-2">
+                Civil Engineering | Construction | Project Management
+              </p>
+              <h1
+                class="text-3xl sm:text-5xl lg:text-[3.35rem] font-heading font-extrabold tracking-tight text-white leading-[1.12]">
+                ALDI YUDHA SEPTIANA</span>
+              </h1>
+            </div>
+
+            <p class="text-slate-200/90 text-base sm:text-lg leading-relaxed max-w-2xl">
+              Mahasiswa Teknik Sipil Universitas Pakuan yang memiliki ketertarikan pada bidang konstruksi, pengawasan
+              proyek, manajemen konstruksi, serta perencanaan dan estimasi biaya pekerjaan konstruksi.
+            </p>
+
+            <!-- Target Positions Pills -->
+            <div class="pt-1">
+              <p class="text-xs uppercase tracking-widest text-slate-400 mb-2.5 font-medium">Fokus Posisi yang Dituju
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1.5 rounded-md bg-white/8 border border-white/15 text-xs sm:text-sm text-white/95 font-medium">Quantity
+                  Surveyor (QS)</span>
+                <span
+                  class="px-3 py-1.5 rounded-md bg-white/8 border border-white/15 text-xs sm:text-sm text-white/95 font-medium">Site
+                  Engineer</span>
+                <span
+                  class="px-3 py-1.5 rounded-md bg-white/8 border border-white/15 text-xs sm:text-sm text-white/95 font-medium">Quality
+                  Control (QC)</span>
+                <span
+                  class="px-3 py-1.5 rounded-md bg-white/8 border border-white/15 text-xs sm:text-sm text-white/95 font-medium">Project
+                  Engineer</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center gap-3.5 pt-3">
+              <a href="#experience"
+                class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gold text-navy font-heading font-bold text-sm hover:bg-gold-light transition-all shadow-lg shadow-black/20">
+                <span>View My Portfolio</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+
+              <button id="download-cv-btn" type="button"
+                class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/25 text-white font-heading font-semibold text-sm transition-all">
+                <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span>Download CV</span>
+              </button>
+
+              <a href="#contact"
+                class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-transparent hover:bg-white/10 border border-skyaccent/40 text-skyaccent font-heading font-semibold text-sm transition-all">
+                <span>Contact Me</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Profile Photo Placeholder Frame -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative w-full max-w-sm">
+              <!-- Decorative Blueprint Corner Accents -->
+              <div
+                class="absolute -top-3 -left-3 w-12 h-12 border-t-2 border-l-2 border-gold rounded-tl-xl pointer-events-none">
+              </div>
+              <div
+                class="absolute -bottom-3 -right-3 w-12 h-12 border-b-2 border-r-2 border-skyaccent rounded-br-xl pointer-events-none">
+              </div>
+
+              <!-- Profile Image Container (Easily replaced via PORTFOLIO_CONFIG.profilePhotoUrl) -->
+              <div
+                class="relative rounded-2xl overflow-hidden bg-navy-dark border border-white/15 shadow-2xl aspect-[4/5] flex flex-col items-center justify-center p-6 text-center placeholder-frame-dark">
+                <!-- Real Profile Image (hidden until profilePhotoUrl is configured) -->
+                <img id="profile-photo-img" src="" alt="Foto Profil Aldi Yudha Septiana"
+                  class="hidden absolute inset-0 w-full h-full object-cover object-top" />
+
+                <!-- Clear Placeholder State -->
+                <div id="profile-photo-placeholder" class="relative z-10 flex flex-col items-center">
+                  <div
+                    class="w-24 h-24 rounded-full bg-white/10 border border-gold/40 flex items-center justify-center mb-5 text-gold">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                  </div>
+                  <span
+                    class="inline-block px-3 py-1 rounded-full bg-gold/15 border border-gold/30 text-gold text-[11px] font-semibold uppercase tracking-wider mb-3">
+                    Placeholder Foto Profil CV
+                  </span>
+                  <p class="text-white font-heading font-semibold text-base">Aldi Yudha Septiana</p>
+                  <p class="text-slate-300/80 text-xs mt-1.5 max-w-[230px] leading-relaxed">
+                    Area ini disiapkan untuk foto profil resmi dari CV. Ganti <code
+                      class="text-skyaccent">profilePhotoUrl</code> pada konfigurasi script saat foto tersedia.
+                  </p>
+                </div>
+
+                <!-- Bottom Metadata Strip -->
+                <div
+                  class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy-dark/95 via-navy-dark/80 to-transparent px-5 py-4 flex items-center justify-between text-left border-t border-white/10 z-20">
+                  <div>
+                    <p class="text-[11px] uppercase tracking-wider text-slate-400">Universitas Pakuan</p>
+                    <p class="text-xs font-semibold text-white">Teknik Sipil • IPK 3,00/4,00</p>
+                  </div>
+                  <span class="px-2.5 py-1 rounded bg-skyaccent/15 text-skyaccent text-[11px] font-semibold">Bogor,
+                    ID</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <!-- Left Heading & Summary -->
+          <div class="lg:col-span-7 reveal">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-10 h-0.5 bg-gold"></span>
+              <span class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-navy-muted">About Me</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-heading font-bold text-navy tracking-tight mb-6">
+              Profil Singkat & Komitmen Profesional
+            </h2>
+
+            <p class="text-slate-700 text-base sm:text-lg leading-relaxed mb-6">
+              Saya merupakan mahasiswa semester 9 Program Studi Teknik Sipil Universitas Pakuan Bogor. Memiliki
+              kompetensi dasar di bidang teknik sipil, dengan pengalaman dalam pengawasan mutu pekerjaan konstruksi dan
+              koordinasi kegiatan pendataan lapangan. Saya memiliki karakter teliti, komunikatif, mampu bekerja sama
+              dalam tim, disiplin, dan bertanggung jawab.
+            </p>
+
+            <!-- Character Badges -->
+            <div class="pt-2">
+              <h3 class="text-xs font-heading font-bold uppercase tracking-widest text-slate-500 mb-3">Karakter Kerja
+              </h3>
+              <div class="flex flex-wrap gap-2.5">
+                <span
+                  class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-50 border border-slate-200 text-sm font-medium text-navy">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Teliti
+                </span>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-50 border border-slate-200 text-sm font-medium text-navy">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Komunikatif
+                </span>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-50 border border-slate-200 text-sm font-medium text-navy">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Kerja Sama Tim
+                </span>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-50 border border-slate-200 text-sm font-medium text-navy">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Disiplin
+                </span>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-50 border border-slate-200 text-sm font-medium text-navy">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Bertanggung Jawab
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Highlight Panel -->
+          <div class="lg:col-span-5 reveal reveal-delay-1">
+            <div class="rounded-2xl bg-navy text-white p-7 sm:p-8 shadow-navy relative overflow-hidden">
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-skyaccent/10 rounded-full -mr-10 -mt-10 pointer-events-none">
+              </div>
+              <h3 class="font-heading font-bold text-lg text-gold mb-5 flex items-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                Minat & Target Posisi
+              </h3>
+              <ul class="space-y-4 text-sm">
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 w-2 h-2 rounded-full bg-skyaccent shrink-0"></span>
+                  <div>
+                    <p class="font-semibold text-white">Quantity Surveyor (QS)</p>
+                    <p class="text-slate-300 text-xs mt-0.5">Perhitungan volume pekerjaan (QTO) dan penyusunan Rencana
+                      Anggaran Biaya (RAB).</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 w-2 h-2 rounded-full bg-skyaccent shrink-0"></span>
+                  <div>
+                    <p class="font-semibold text-white">Site Engineer</p>
+                    <p class="text-slate-300 text-xs mt-0.5">Koordinasi pelaksanaan teknis di lapangan sesuai gambar
+                      kerja dan spesifikasi.</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 w-2 h-2 rounded-full bg-skyaccent shrink-0"></span>
+                  <div>
+                    <p class="font-semibold text-white">Quality Control (QC)</p>
+                    <p class="text-slate-300 text-xs mt-0.5">Pengawasan mutu pekerjaan, identifikasi ketidaksesuaian
+                      (non-conformity), dan rekomendasi perbaikan.</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 w-2 h-2 rounded-full bg-skyaccent shrink-0"></span>
+                  <div>
+                    <p class="font-semibold text-white">Project Engineer</p>
+                    <p class="text-slate-300 text-xs mt-0.5">Dukungan manajemen proyek, pelaporan perkembangan kegiatan,
+                      dan koordinasi lintas tim.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section id="education" class="py-20 lg:py-28 bg-slate-50 bg-subtle-grid border-y border-slate-200/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-14 reveal">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-10 h-0.5 bg-gold"></span>
+            <span class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-navy-muted">Education</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-heading font-bold text-navy tracking-tight">
+            Riwayat Pendidikan & Mata Kuliah Relevan
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <!-- Timeline Column -->
+          <div class="lg:col-span-7 reveal">
+            <div class="relative pl-8 border-l-2 border-navy/20 space-y-10">
+              <!-- Item 1: Universitas Pakuan -->
+              <div class="relative">
+                <span class="absolute -left-[41px] top-1.5 w-5 h-5 rounded-full bg-navy border-4 border-gold"></span>
+                <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-soft hover-card">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span
+                      class="inline-flex items-center px-3 py-1 rounded-full bg-navy/5 text-navy font-semibold text-xs">
+                      2022 – Sekarang
+                    </span>
+                    <span
+                      class="inline-flex items-center px-3 py-1 rounded-full bg-gold-soft border border-gold/30 text-navy font-bold text-xs">
+                      IPK 3,00 / 4,00
+                    </span>
+                  </div>
+                  <h3 class="text-xl font-heading font-bold text-navy">Universitas Pakuan</h3>
+                  <p class="text-navy-muted font-medium text-sm mt-1">Program Studi Teknik Sipil (S1) — Semester 9</p>
+                  <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                    Menempuh pendidikan sarjana Teknik Sipil di Bogor dengan fokus pada struktur bangunan sipil,
+                    manajemen konstruksi, serta perencanaan dan estimasi biaya proyek.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 2: SMA Negeri 1 Cigudeg -->
+              <div class="relative">
+                <span class="absolute -left-[41px] top-1.5 w-5 h-5 rounded-full bg-white border-4 border-navy"></span>
+                <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-soft hover-card">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span
+                      class="inline-flex items-center px-3 py-1 rounded-full bg-slate-100 text-slate-700 font-semibold text-xs">
+                      2019 – 2022
+                    </span>
+                  </div>
+                  <h3 class="text-xl font-heading font-bold text-navy">SMA Negeri 1 Cigudeg</h3>
+                  <p class="text-navy-muted font-medium text-sm mt-1">Jurusan Ilmu Pengetahuan Alam (IPA)</p>
+                  <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                    Menyelesaikan pendidikan menengah atas pada peminatan IPA sebagai fondasi ilmu matematika dan fisika
+                    untuk studi teknik sipil.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Relevant Coursework Column -->
+          <div class="lg:col-span-5 reveal reveal-delay-1">
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-soft h-full">
+              <div class="flex items-center gap-3 mb-5">
+                <div class="w-10 h-10 rounded-xl bg-navy text-gold flex items-center justify-center">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-heading font-bold text-lg text-navy">Mata Kuliah Relevan</h3>
+                  <p class="text-xs text-slate-500">Program Studi Teknik Sipil</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 gap-3">
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                  <span class="w-2 h-2 rounded-full bg-gold shrink-0"></span>
+                  <span class="text-sm font-medium text-navy">Rencana Anggaran Biaya</span>
+                </div>
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                  <span class="w-2 h-2 rounded-full bg-gold shrink-0"></span>
+                  <span class="text-sm font-medium text-navy">Manajemen Konstruksi 1 dan 2</span>
+                </div>
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                  <span class="w-2 h-2 rounded-full bg-gold shrink-0"></span>
+                  <span class="text-sm font-medium text-navy">Struktur Beton Bertulang 1 dan 2</span>
+                </div>
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                  <span class="w-2 h-2 rounded-full bg-gold shrink-0"></span>
+                  <span class="text-sm font-medium text-navy">Gambar Bangunan Sipil</span>
+                </div>
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                  <span class="w-2 h-2 rounded-full bg-gold shrink-0"></span>
+                  <span class="text-sm font-medium text-navy">Rekayasa Gempa</span>
+                </div>
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                  <span class="w-2 h-2 rounded-full bg-gold shrink-0"></span>
+                  <span class="text-sm font-medium text-navy">Perencanaan Jembatan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE & PROJECTS SECTION ==================== -->
+    <section id="experience" class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-14 reveal">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-10 h-0.5 bg-gold"></span>
+            <span class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-navy-muted">Experience &
+              Projects</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-heading font-bold text-navy tracking-tight">
+            Pengalaman Proyek & Kegiatan Lapangan
+          </h2>
+          <p class="text-slate-600 text-base mt-3">
+            Keterlibatan langsung dalam pengawasan mutu konstruksi infrastruktur serta koordinasi pendataan lapangan.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- PROJECT 01 -->
+          <article
+            class="reveal rounded-2xl bg-white border border-slate-200 shadow-soft hover-card overflow-hidden flex flex-col">
+            <div class="bg-navy text-white px-6 sm:px-7 py-5 flex items-center justify-between gap-4">
+              <div>
+                <span class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-gold">Project 01</span>
+                <h3 class="font-heading font-bold text-lg sm:text-xl mt-1 leading-snug">
+                  Proyek Peningkatan Kapasitas Lajur B Bogor–Ciawi Jalan Tol Jagorawi
+                </h3>
+              </div>
+            </div>
+
+            <div class="p-6 sm:p-7 flex-1 flex flex-col">
+              <div class="flex flex-wrap items-center gap-2 mb-5">
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-skyaccent-soft text-skyaccent-dark text-xs font-semibold">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  September 2025 – Desember 2025
+                </span>
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full bg-slate-100 text-navy text-xs font-medium">
+                  Pengawasan Mutu Konstruksi
+                </span>
+              </div>
+
+              <h4 class="text-xs font-heading font-bold uppercase tracking-wider text-slate-500 mb-3">Lingkup Tanggung
+                Jawab</h4>
+              <ul class="space-y-2.5 text-sm text-slate-700 mb-6">
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Melakukan pengawasan mutu pekerjaan sesuai gambar kerja dan spesifikasi teknis.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Mengidentifikasi ketidaksesuaian pekerjaan (<em>non-conformity</em>).</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Memberikan rekomendasi perbaikan.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Berkoordinasi dengan tim proyek, mandor, dan konsultan pengawas.</span>
+                </li>
+              </ul>
+
+              <!-- Project 01 Documentation Area (Placeholder ready for real photos) -->
+              <div class="mt-auto pt-5 border-t border-slate-100">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-heading font-bold uppercase tracking-wider text-navy-muted">Dokumentasi
+                    Proyek</span>
+                  <span class="text-[11px] text-slate-500">Dokumentasi Lapangan</span>
+                </div>
+                <div id="project-01-docs" class="grid grid-cols-2 gap-3">
+                  <div
+                    class="placeholder-frame rounded-xl border border-dashed border-slate-300 aspect-[16/10] flex flex-col items-center justify-center p-3 text-center">
+                    <svg class="w-6 h-6 text-slate-400 mb-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span class="text-[11px] font-medium text-slate-500">Foto Lapangan 01</span>
+                    <span class="text-[10px] text-slate-400">Belum diunggah</span>
+                  </div>
+                  <div
+                    class="placeholder-frame rounded-xl border border-dashed border-slate-300 aspect-[16/10] flex flex-col items-center justify-center p-3 text-center">
+                    <svg class="w-6 h-6 text-slate-400 mb-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span class="text-[11px] font-medium text-slate-500">Foto Lapangan 02</span>
+                    <span class="text-[10px] text-slate-400">Belum diunggah</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02 -->
+          <article
+            class="reveal reveal-delay-1 rounded-2xl bg-white border border-slate-200 shadow-soft hover-card overflow-hidden flex flex-col">
+            <div class="bg-navy text-white px-6 sm:px-7 py-5 flex items-center justify-between gap-4">
+              <div>
+                <span class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-gold">Project 02</span>
+                <h3 class="font-heading font-bold text-lg sm:text-xl mt-1 leading-snug">
+                  Pendataan Basis Data Perumahan Provinsi DKI Jakarta
+                </h3>
+              </div>
+            </div>
+
+            <div class="p-6 sm:p-7 flex-1 flex flex-col">
+              <div class="flex flex-wrap items-center gap-2 mb-5">
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-skyaccent-soft text-skyaccent-dark text-xs font-semibold">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  Juni 2026 – November 2026
+                </span>
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full bg-slate-100 text-navy text-xs font-medium">
+                  Koordinasi & Pendataan Lapangan
+                </span>
+              </div>
+
+              <h4 class="text-xs font-heading font-bold uppercase tracking-wider text-slate-500 mb-3">Lingkup Tanggung
+                Jawab</h4>
+              <ul class="space-y-2.5 text-sm text-slate-700 mb-6">
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Mengoordinasikan dan mengawasi tim petugas pendataan.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Mengidentifikasi serta menyelesaikan kendala teknis dan administratif.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Menyusun laporan perkembangan kegiatan.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Melaporkan hasil pelaksanaan kepada koordinator atau penanggung jawab.</span>
+                </li>
+              </ul>
+
+              <!-- Project 02 Documentation Area (Placeholder ready for real photos) -->
+              <div class="mt-auto pt-5 border-t border-slate-100">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-heading font-bold uppercase tracking-wider text-navy-muted">Dokumentasi
+                    Kegiatan</span>
+                  <span class="text-[11px] text-slate-500">Dokumentasi Lapangan</span>
+                </div>
+                <div id="project-02-docs" class="grid grid-cols-2 gap-3">
+                  <div
+                    class="placeholder-frame rounded-xl border border-dashed border-slate-300 aspect-[16/10] flex flex-col items-center justify-center p-3 text-center">
+                    <svg class="w-6 h-6 text-slate-400 mb-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span class="text-[11px] font-medium text-slate-500">Foto Kegiatan 01</span>
+                    <span class="text-[10px] text-slate-400">Belum diunggah</span>
+                  </div>
+                  <div
+                    class="placeholder-frame rounded-xl border border-dashed border-slate-300 aspect-[16/10] flex flex-col items-center justify-center p-3 text-center">
+                    <svg class="w-6 h-6 text-slate-400 mb-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span class="text-[11px] font-medium text-slate-500">Foto Kegiatan 02</span>
+                    <span class="text-[10px] text-slate-400">Belum diunggah</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS & COMPETENCIES SECTION ==================== -->
+    <section id="skills" class="py-20 lg:py-28 bg-slate-50 border-y border-slate-200/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-14 reveal">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-10 h-0.5 bg-gold"></span>
+            <span class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-navy-muted">Skills &
+              Competencies</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-heading font-bold text-navy tracking-tight">
+            Keahlian Teknis, Kompetensi Ketekniksipilan & Personal
+          </h2>
+          <p class="text-slate-600 text-base mt-3">
+            Disusun secara transparan dengan memisahkan kompetensi yang diperoleh melalui pendidikan akademik dan
+            pengalaman praktik lapangan.
+          </p>
+        </div>
+
+        <!-- 1. Technical Skills (Software) -->
+        <div class="mb-14 reveal">
+          <div class="flex items-center justify-between mb-6">
+            <h3 class="font-heading font-bold text-xl text-navy flex items-center gap-2.5">
+              <span class="w-2.5 h-2.5 rounded-sm bg-gold"></span>
+              Technical Skills (Perangkat Lunak)
+            </h3>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            <!-- AutoCAD 2D -->
+            <div
+              class="bg-white rounded-xl p-5 border border-slate-200/80 shadow-soft hover-card text-center flex flex-col items-center">
+              <div
+                class="w-12 h-12 rounded-xl bg-navy/5 text-navy flex items-center justify-center mb-3 font-heading font-extrabold text-sm border border-navy/10">
+                CAD
+              </div>
+              <h4 class="font-heading font-bold text-sm text-navy">AutoCAD 2D</h4>
+              <p class="text-[11px] text-slate-500 mt-1">Gambar Teknik</p>
+            </div>
+            <!-- SAP2000 -->
+            <div
+              class="bg-white rounded-xl p-5 border border-slate-200/80 shadow-soft hover-card text-center flex flex-col items-center">
+              <div
+                class="w-12 h-12 rounded-xl bg-navy/5 text-navy flex items-center justify-center mb-3 font-heading font-extrabold text-sm border border-navy/10">
+                SAP
+              </div>
+              <h4 class="font-heading font-bold text-sm text-navy">SAP2000</h4>
+              <p class="text-[11px] text-slate-500 mt-1">Analisis Struktur</p>
+            </div>
+            <!-- Microsoft Excel -->
+            <div
+              class="bg-white rounded-xl p-5 border border-slate-200/80 shadow-soft hover-card text-center flex flex-col items-center">
+              <div
+                class="w-12 h-12 rounded-xl bg-navy/5 text-navy flex items-center justify-center mb-3 font-heading font-extrabold text-sm border border-navy/10">
+                XLS
+              </div>
+              <h4 class="font-heading font-bold text-sm text-navy">Microsoft Excel</h4>
+              <p class="text-[11px] text-slate-500 mt-1">Olah Data & RAB</p>
+            </div>
+            <!-- Microsoft Project -->
+            <div
+              class="bg-white rounded-xl p-5 border border-slate-200/80 shadow-soft hover-card text-center flex flex-col items-center">
+              <div
+                class="w-12 h-12 rounded-xl bg-navy/5 text-navy flex items-center justify-center mb-3 font-heading font-extrabold text-sm border border-navy/10">
+                MPP
+              </div>
+              <h4 class="font-heading font-bold text-sm text-navy">Microsoft Project</h4>
+              <p class="text-[11px] text-slate-500 mt-1">Penjadwalan</p>
+            </div>
+            <!-- Microsoft Word -->
+            <div
+              class="bg-white rounded-xl p-5 border border-slate-200/80 shadow-soft hover-card text-center flex flex-col items-center">
+              <div
+                class="w-12 h-12 rounded-xl bg-navy/5 text-navy flex items-center justify-center mb-3 font-heading font-extrabold text-sm border border-navy/10">
+                DOC
+              </div>
+              <h4 class="font-heading font-bold text-sm text-navy">Microsoft Word</h4>
+              <p class="text-[11px] text-slate-500 mt-1">Dokumentasi</p>
+            </div>
+            <!-- Google Spreadsheet -->
+            <div
+              class="bg-white rounded-xl p-5 border border-slate-200/80 shadow-soft hover-card text-center flex flex-col items-center">
+              <div
+                class="w-12 h-12 rounded-xl bg-navy/5 text-navy flex items-center justify-center mb-3 font-heading font-extrabold text-sm border border-navy/10">
+                GS
+              </div>
+              <h4 class="font-heading font-bold text-sm text-navy">Google Spreadsheet</h4>
+              <p class="text-[11px] text-slate-500 mt-1">Kolaborasi Data</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Engineering Competencies (Clearly Separated: Field Practice vs Academic Foundation) -->
+        <div class="mb-14 reveal">
+          <h3 class="font-heading font-bold text-xl text-navy flex items-center gap-2.5 mb-6">
+            <span class="w-2.5 h-2.5 rounded-sm bg-gold"></span>
+            Engineering Competencies
+          </h3>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Field Practice Experience -->
+            <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-soft">
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <span
+                  class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navy text-white text-xs font-semibold">
+                  Pengalaman Praktik Lapangan
+                </span>
+                <span class="text-xs text-slate-400">Berbasis Proyek Aktual</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-5 leading-relaxed">
+                Kompetensi yang telah diterapkan langsung pada kegiatan pengawasan proyek jalan tol dan koordinasi
+                pendataan lapangan.
+              </p>
+              <div class="space-y-3">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/70">
+                  <h4 class="font-heading font-bold text-sm text-navy">Construction Supervision</h4>
+                  <p class="text-xs text-slate-600 mt-1">Pengawasan pelaksanaan pekerjaan lapangan dan koordinasi dengan
+                    tim proyek, mandor, serta konsultan pengawas.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/70">
+                  <h4 class="font-heading font-bold text-sm text-navy">Quality Control</h4>
+                  <p class="text-xs text-slate-600 mt-1">Pemeriksaan kesesuaian mutu terhadap gambar kerja & spesifikasi
+                    teknis, identifikasi <em>non-conformity</em>, dan rekomendasi perbaikan.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Academic Competencies -->
+            <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-soft">
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <span
+                  class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-soft border border-gold/40 text-navy text-xs font-semibold">
+                  Kompetensi Akademik
+                </span>
+                <span class="text-xs text-slate-400">Berbasis Studi Teknik Sipil</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-5 leading-relaxed">
+                Kompetensi dasar ketekniksipilan yang dipelajari dan dikembangkan selama perkuliahan di Program Studi
+                Teknik Sipil Universitas Pakuan.
+              </p>
+              <div class="flex flex-wrap gap-2.5">
+                <span
+                  class="px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm font-semibold text-navy">Quantity
+                  Take Off (QTO)</span>
+                <span
+                  class="px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm font-semibold text-navy">Rencana
+                  Anggaran Biaya (RAB)</span>
+                <span
+                  class="px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm font-semibold text-navy">Technical
+                  Drawing</span>
+                <span
+                  class="px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm font-semibold text-navy">Structural
+                  Engineering</span>
+                <span
+                  class="px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm font-semibold text-navy">Construction
+                  Project Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Personal Skills & Languages -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 reveal">
+          <!-- Personal Skills -->
+          <div class="lg:col-span-8 bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-soft">
+            <h3 class="font-heading font-bold text-lg text-navy mb-5 flex items-center gap-2.5">
+              <span class="w-2.5 h-2.5 rounded-sm bg-gold"></span>
+              Personal Skills
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5">
+              <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                <div class="w-9 h-9 rounded-lg bg-navy text-gold flex items-center justify-center shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                  </svg>
+                </div>
+                <span class="text-sm font-semibold text-navy">Communication</span>
+              </div>
+
+              <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                <div class="w-9 h-9 rounded-lg bg-navy text-gold flex items-center justify-center shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <span class="text-sm font-semibold text-navy">Critical Thinking</span>
+              </div>
+
+              <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                <div class="w-9 h-9 rounded-lg bg-navy text-gold flex items-center justify-center shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <span class="text-sm font-semibold text-navy">Problem Solving</span>
+              </div>
+
+              <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                <div class="w-9 h-9 rounded-lg bg-navy text-gold flex items-center justify-center shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <span class="text-sm font-semibold text-navy">Teamwork</span>
+              </div>
+
+              <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                <div class="w-9 h-9 rounded-lg bg-navy text-gold flex items-center justify-center shrink-0">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <span class="text-sm font-semibold text-navy">Time Management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="lg:col-span-4 bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-soft">
+            <h3 class="font-heading font-bold text-lg text-navy mb-5 flex items-center gap-2.5">
+              <span class="w-2.5 h-2.5 rounded-sm bg-gold"></span>
+              Bahasa
+            </h3>
+            <div class="space-y-4">
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/70">
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="font-heading font-bold text-sm text-navy">Bahasa Indonesia</span>
+                  <span class="px-2.5 py-0.5 rounded-full bg-navy text-white text-[11px] font-semibold">Native</span>
+                </div>
+                <div class="w-full h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                  <div class="w-full h-full bg-navy rounded-full"></div>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/70">
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="font-heading font-bold text-sm text-navy">English</span>
+                  <span
+                    class="px-2.5 py-0.5 rounded-full bg-gold-soft border border-gold/40 text-navy text-[11px] font-semibold">Intermediate</span>
+                </div>
+                <div class="w-full h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                  <div class="w-2/3 h-full bg-gold rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATES GALLERY SECTION ==================== -->
+    <section id="certificates" class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-14 reveal">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-10 h-0.5 bg-gold"></span>
+            <span class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-navy-muted">Certificates</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-heading font-bold text-navy tracking-tight">
+            Sertifikat & Pelatihan
+          </h2>
+          <p class="text-slate-600 text-base mt-3">
+            Daftar sertifikat pelatihan dan kompetensi resmi di bidang teknik sipil dan keselamatan kerja. Klik gambar
+            untuk memperbesar.
+          </p>
+        </div>
+
+        <div id="certificates-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Certificate 1 -->
+          <article
+            class="reveal rounded-2xl bg-white border border-slate-200 shadow-soft hover-card overflow-hidden flex flex-col"
+            data-cert-index="0">
+            <div
+              class="cert-img-wrap relative aspect-[4/3] placeholder-frame border-b border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+              <svg class="w-9 h-9 text-navy/35 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+              <span class="text-xs font-semibold text-navy/60">Placeholder Gambar Sertifikat</span>
+              <span class="text-[11px] text-slate-400 mt-0.5">Tambahkan file gambar asli</span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <span
+                class="inline-block self-start px-2.5 py-0.5 rounded bg-navy/5 text-navy font-bold text-xs mb-2.5">2022</span>
+              <h3 class="font-heading font-bold text-base text-navy leading-snug">
+                Mitigasi dan Adaptasi Perubahan Iklim
+              </h3>
+            </div>
+          </article>
+
+          <!-- Certificate 2 -->
+          <article
+            class="reveal reveal-delay-1 rounded-2xl bg-white border border-slate-200 shadow-soft hover-card overflow-hidden flex flex-col"
+            data-cert-index="1">
+            <div
+              class="cert-img-wrap relative aspect-[4/3] placeholder-frame border-b border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+              <svg class="w-9 h-9 text-navy/35 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+              <span class="text-xs font-semibold text-navy/60">Placeholder Gambar Sertifikat</span>
+              <span class="text-[11px] text-slate-400 mt-0.5">Tambahkan file gambar asli</span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <span
+                class="inline-block self-start px-2.5 py-0.5 rounded bg-navy/5 text-navy font-bold text-xs mb-2.5">2024</span>
+              <h3 class="font-heading font-bold text-base text-navy leading-snug">
+                Geotechnical Engineers are Awesome
+              </h3>
+            </div>
+          </article>
+
+          <!-- Certificate 3 -->
+          <article
+            class="reveal reveal-delay-2 rounded-2xl bg-white border border-slate-200 shadow-soft hover-card overflow-hidden flex flex-col"
+            data-cert-index="2">
+            <div
+              class="cert-img-wrap relative aspect-[4/3] placeholder-frame border-b border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+              <svg class="w-9 h-9 text-navy/35 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+              <span class="text-xs font-semibold text-navy/60">Placeholder Gambar Sertifikat</span>
+              <span class="text-[11px] text-slate-400 mt-0.5">Tambahkan file gambar asli</span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <span
+                class="inline-block self-start px-2.5 py-0.5 rounded bg-gold-soft border border-gold/30 text-navy font-bold text-xs mb-2.5">2026</span>
+              <h3 class="font-heading font-bold text-base text-navy leading-snug">
+                Pendidikan Dasar Keselamatan dan Kesehatan Kerja (K3) Umum Level Pemula
+              </h3>
+            </div>
+          </article>
+
+          <!-- Certificate 4 -->
+          <article
+            class="reveal reveal-delay-3 rounded-2xl bg-white border border-slate-200 shadow-soft hover-card overflow-hidden flex flex-col"
+            data-cert-index="3">
+            <div
+              class="cert-img-wrap relative aspect-[4/3] placeholder-frame border-b border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+              <svg class="w-9 h-9 text-navy/35 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+              <span class="text-xs font-semibold text-navy/60">Placeholder Gambar Sertifikat</span>
+              <span class="text-[11px] text-slate-400 mt-0.5">Tambahkan file gambar asli</span>
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <span
+                class="inline-block self-start px-2.5 py-0.5 rounded bg-gold-soft border border-gold/30 text-navy font-bold text-xs mb-2.5">2026</span>
+              <h3 class="font-heading font-bold text-base text-navy leading-snug">
+                Ahli Muda Teknik Bangunan Gedung (Freshgraduate)
+              </h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="py-20 lg:py-28 bg-slate-50 border-t border-slate-200/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-14 reveal">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-10 h-0.5 bg-gold"></span>
+            <span class="text-xs font-heading font-bold uppercase tracking-[0.2em] text-navy-muted">Contact</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-heading font-bold text-navy tracking-tight">
+            Mari Terhubung untuk Peluang Karier & Proyek
+          </h2>
+          <p class="text-slate-600 text-base mt-3">
+            Silakan hubungi saya secara langsung melalui WhatsApp, email, atau formulir pesan di bawah ini.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <!-- Contact Details Card -->
+          <div class="lg:col-span-5 reveal">
+            <div class="rounded-2xl bg-navy text-white p-7 sm:p-8 shadow-navy space-y-6">
+              <div>
+                <p class="text-xs uppercase tracking-widest text-gold font-semibold mb-1">Informasi Kontak</p>
+                <h3 class="font-heading font-bold text-2xl text-white">Aldi Yudha Septiana</h3>
+                <p class="text-slate-300 text-sm mt-1">Teknik Sipil — Universitas Pakuan</p>
+              </div>
+
+              <div class="space-y-4 pt-2">
+                <!-- WhatsApp -->
+                <div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                  <div
+                    class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-300 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z" />
+                    </svg>
+                  </div>
+                  <div class="min-w-0">
+                    <p class="text-xs text-slate-400">WhatsApp</p>
+                    <p class="font-semibold text-white text-sm mt-0.5">+62 813-8309-3409</p>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                  <div
+                    class="w-10 h-10 rounded-lg bg-skyaccent/20 text-skyaccent flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <p class="text-xs text-slate-400">Email</p>
+                    <p class="font-semibold text-white text-sm mt-0.5 break-all">aldiyudha1457@gmail.com</p>
+                  </div>
+                  <button id="copy-email-btn" type="button" title="Salin alamat email"
+                    class="text-xs px-2.5 py-1 rounded bg-white/10 hover:bg-white/20 text-slate-200 transition-colors shrink-0">
+                    Salin
+                  </button>
+                </div>
+              </div>
+
+              <!-- Direct Action Buttons -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <a href="https://wa.me/6281383093409?text=Halo%20Aldi%20Yudha%20Septiana%2C%20saya%20menghubungi%20Anda%20melalui%20website%20portofolio."
+                  target="_blank" rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-heading font-semibold text-sm transition-colors">
+                  <span>Chat WhatsApp</span>
+                </a>
+                <a href="mailto:aldiyudha1457@gmail.com?subject=Peluang%20Karier%20%E2%80%94%20Aldi%20Yudha%20Septiana"
+                  class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gold hover:bg-gold-light text-navy font-heading font-bold text-sm transition-colors">
+                  <span>Kirim Email</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- HRD Contact Form -->
+          <div class="lg:col-span-7 reveal reveal-delay-1">
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-soft">
+              <h3 class="font-heading font-bold text-xl text-navy mb-1">Formulir Pesan untuk HRD / Rekruter</h3>
+              <p class="text-sm text-slate-500 mb-6">
+                Lengkapi formulir berikut untuk mengirim pesan melalui aplikasi email Anda atau langsung ke WhatsApp.
+              </p>
+
+              <form id="hrd-contact-form" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="sender-name"
+                      class="block text-xs font-heading font-semibold uppercase tracking-wider text-navy-muted mb-1.5">Nama
+                      / Perusahaan *</label>
+                    <input id="sender-name" name="name" type="text" required placeholder="Contoh: Tim HRD PT Konstruksi"
+                      class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-navy focus:outline-none focus:border-navy focus:ring-2 focus:ring-navy/10 transition-all" />
+                  </div>
+                  <div>
+                    <label for="sender-email"
+                      class="block text-xs font-heading font-semibold uppercase tracking-wider text-navy-muted mb-1.5">Email
+                      Anda *</label>
+                    <input id="sender-email" name="email" type="email" required placeholder="hrd@perusahaan.com"
+                      class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-navy focus:outline-none focus:border-navy focus:ring-2 focus:ring-navy/10 transition-all" />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="sender-subject"
+                    class="block text-xs font-heading font-semibold uppercase tracking-wider text-navy-muted mb-1.5">Subjek
+                    / Posisi yang Ditawarkan *</label>
+                  <input id="sender-subject" name="subject" type="text" required
+                    placeholder="Contoh: Undangan Wawancara — Site Engineer / QC / QS"
+                    class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-navy focus:outline-none focus:border-navy focus:ring-2 focus:ring-navy/10 transition-all" />
+                </div>
+
+                <div>
+                  <label for="sender-message"
+                    class="block text-xs font-heading font-semibold uppercase tracking-wider text-navy-muted mb-1.5">Pesan
+                    *</label>
+                  <textarea id="sender-message" name="message" rows="4" required
+                    placeholder="Tuliskan detail informasi, kebutuhan posisi, atau jadwal wawancara..."
+                    class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-navy focus:outline-none focus:border-navy focus:ring-2 focus:ring-navy/10 transition-all resize-y"></textarea>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-3 pt-2">
+                  <button type="submit"
+                    class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-navy hover:bg-navy-light text-white font-heading font-semibold text-sm transition-colors shadow-navy">
+                    <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <span>Kirim via Aplikasi Email</span>
+                  </button>
+
+                  <button id="send-via-wa-btn" type="button"
+                    class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 text-emerald-800 font-heading font-semibold text-sm transition-colors">
+                    <span>Kirim via WhatsApp</span>
+                  </button>
+                </div>
+
+                <!-- Honest Mechanism Explanation -->
+                <p class="text-xs text-slate-500 pt-2 leading-relaxed">
+                  <strong>Catatan mekanisme formulir:</strong> Tombol <em>"Kirim via Aplikasi Email"</em> akan membuka
+                  aplikasi email default pada perangkat Anda (seperti Outlook, Gmail, atau Apple Mail) dengan tujuan
+                  <span class="text-navy font-medium">aldiyudha1457@gmail.com</span> beserta subjek dan isi pesan yang
+                  sudah terisi otomatis. Anda juga dapat memilih <em>"Kirim via WhatsApp"</em> untuk respon lebih cepat.
+                </p>
+
+                <div id="form-feedback" class="hidden rounded-xl p-3.5 text-sm font-medium"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-navy-dark text-slate-300 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-center md:text-left">
+          <p class="font-heading font-bold text-white text-base tracking-wide">ALDI YUDHA SEPTIANA</p>
+          <p class="text-xs text-slate-400 mt-1">Civil Engineering | Construction | Project Management</p>
+        </div>
+
+        <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-slate-400">
+          <a href="#home" class="hover:text-gold transition-colors">Home</a>
+          <a href="#about" class="hover:text-gold transition-colors">About</a>
+          <a href="#education" class="hover:text-gold transition-colors">Education</a>
+          <a href="#experience" class="hover:text-gold transition-colors">Experience</a>
+          <a href="#skills" class="hover:text-gold transition-colors">Skills</a>
+          <a href="#certificates" class="hover:text-gold transition-colors">Certificates</a>
+          <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
+        </nav>
+
+        <a href="#home" aria-label="Kembali ke atas"
+          class="inline-flex items-center gap-1.5 text-xs font-semibold text-gold hover:text-gold-light transition-colors">
+          <span>Ke Atas</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-white/10 text-center text-xs text-slate-400">
+        © 2026 Aldi Yudha Septiana. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== CV PLACEHOLDER MODAL ==================== -->
+  <div id="cv-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4" role="dialog" aria-modal="true"
+    aria-labelledby="cv-modal-title">
+    <div id="cv-modal-backdrop" class="modal-backdrop absolute inset-0 bg-navy-dark/70 backdrop-blur-sm"></div>
+    <div
+      class="modal-panel relative bg-white rounded-2xl max-w-md w-full p-6 sm:p-7 shadow-2xl border border-slate-200 z-10">
+      <div class="flex items-start justify-between gap-4 mb-4">
+        <div
+          class="w-11 h-11 rounded-xl bg-gold-soft border border-gold/40 text-navy flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+        </div>
+        <button id="close-cv-modal" type="button" aria-label="Tutup"
+          class="p-1.5 rounded-lg text-slate-400 hover:text-navy hover:bg-slate-100 transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <h3 id="cv-modal-title" class="font-heading font-bold text-lg text-navy">File CV (PDF) Belum Diunggah</h3>
+      <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+        Saat ini tautan unduhan CV PDF masih berupa placeholder karena file CV asli belum dilampirkan ke website. Untuk
+        meminta CV terbaru secara langsung, silakan hubungi saya melalui WhatsApp atau Email.
+      </p>
+
+      <div class="mt-4 p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-500">
+        <strong>Catatan Pemilik Website:</strong> Isi <code
+          class="text-navy font-semibold">PORTFOLIO_CONFIG.cvPdfUrl</code> dengan lokasi file PDF (contoh: <code
+          class="text-navy">assets/CV_Aldi_Yudha_Septiana.pdf</code>) agar tombol ini langsung mengunduh CV asli.
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mt-5">
+        <a href="https://wa.me/6281383093409?text=Halo%20Aldi%20Yudha%20Septiana%2C%20boleh%20minta%20file%20CV%20terbaru%20Anda%3F"
+          target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-heading font-semibold text-xs transition-colors">
+          Minta CV via WhatsApp
+        </a>
+        <a href="mailto:aldiyudha1457@gmail.com?subject=Permintaan%20CV%20%E2%80%94%20Aldi%20Yudha%20Septiana&body=Halo%20Aldi%2C%0A%0ASaya%20tertarik%20dengan%20profil%20Anda%20dan%20ingin%20meminta%20file%20CV%20terbaru.%0A%0ATerima%20kasih."
+          class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-navy hover:bg-navy-light text-white font-heading font-semibold text-xs transition-colors">
+          Minta CV via Email
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== IMAGE LIGHTBOX MODAL ==================== -->
+  <div id="image-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4" role="dialog" aria-modal="true"
+    aria-labelledby="image-modal-caption">
+    <div id="image-modal-backdrop" class="modal-backdrop absolute inset-0 bg-navy-dark/80 backdrop-blur-sm"></div>
+    <div class="modal-panel relative max-w-4xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-200 z-10">
+      <div class="flex items-center justify-between gap-4 px-5 py-3.5 border-b border-slate-200 bg-slate-50">
+        <p id="image-modal-caption" class="font-heading font-semibold text-sm text-navy truncate">Pratinjau Gambar</p>
+        <button id="close-image-modal" type="button" aria-label="Tutup pratinjau"
+          class="p-1.5 rounded-lg text-slate-500 hover:text-navy hover:bg-slate-200/70 transition-colors shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="bg-navy-dark/95 flex items-center justify-center p-3 sm:p-5 max-h-[80vh]">
+        <img id="image-modal-img" src="" alt="Pratinjau Gambar" class="max-h-[72vh] w-auto max-w-full object-contain rounded-lg" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    /**
+     * =========================================================================
+     * KONFIGURASI ASET PORTOFOLIO (MUDAH DIPERBARUI)
+     * =========================================================================
+     * Isi path/URL file asli di bawah ini ketika foto profil, CV PDF, foto
+     * dokumentasi proyek, atau gambar sertifikat sudah tersedia.
+     * Biarkan string kosong ('') untuk menampilkan placeholder yang rapi.
+     */
+    const PORTFOLIO_CONFIG = {
+      // Foto profil utama di Hero
+      profilePhotoUrl: 'assets/foto-profil-aldi.png',
+
+      // File CV resmi di folder assets
+      cvPdfUrl: 'assets/CV_ALDI.pdf',
+      cvFileName: 'CV_Aldi_Yudha_Septiana.pdf',
+
+      // Foto dokumentasi Project 01 (Tol Jagorawi) — tambahkan objek { src, caption, position }
+      project01Photos: [
+        {
+          src: 'assets/proyek-jagorawi-lapangan.jpeg',
+          caption: 'Inspeksi & Pengawasan Lapangan Tol Jagorawi',
+          position: 'object-[50%_28%]'
+        },
+        {
+          src: 'assets/proyek-jagorawi-slump-test.jpeg',
+          caption: 'Pengujian Slump Test Beton (Quality Control)',
+          position: 'object-[50%_62%]'
+        }
+      ],
+
+      // Foto dokumentasi Project 02 (Pendataan Perumahan DKI Jakarta)
+      project02Photos: [
+        {
+          src: 'assets/pendataan-dki-workshop.jpeg',
+          caption: 'Workshop 2 Pendataan Basis Data Perumahan DKI Jakarta',
+          position: 'object-center'
+        },
+        {
+          src: 'assets/pendataan-dki-lapangan.jpeg',
+          caption: 'Koordinasi & Pendataan Lapangan bersama Kader',
+          position: 'object-center'
+        }
+      ],
+
+      // Gambar sertifikat sesuai urutan 0..3
+      certificateImages: [
+        'assets/sertifikat-2022-perubahan-iklim.jpg', // 0: Mitigasi dan Adaptasi Perubahan Iklim (2022)
+        'assets/sertifikat-2024-geotechnical.jpg',    // 1: Geotechnical Engineers are Awesome (2024)
+        'assets/sertifikat-2026-k3-umum.jpg',         // 2: Pendidikan Dasar K3 Umum Level Pemula (2026)
+        'assets/sertifikat-2026-ahli-muda-tbg.jpg'    // 3: Ahli Muda Teknik Bangunan Gedung (Freshgraduate) (2026)
+      ],
+
+      // Kontak resmi
+      email: 'aldiyudha1457@gmail.com',
+      whatsappNumber: '6281383093409'
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Lightbox helper for project photos & certificates
+      const imageModal = document.getElementById('image-modal');
+      const imageModalImg = document.getElementById('image-modal-img');
+      const imageModalCaption = document.getElementById('image-modal-caption');
+      const closeImageModalBtn = document.getElementById('close-image-modal');
+      const imageModalBackdrop = document.getElementById('image-modal-backdrop');
+
+      function openImageModal(src, caption) {
+        imageModalImg.src = src;
+        imageModalImg.alt = caption || 'Pratinjau Gambar';
+        imageModalCaption.textContent = caption || 'Pratinjau Gambar';
+        imageModal.classList.remove('hidden');
+        imageModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeImageModal() {
+        imageModal.classList.add('hidden');
+        imageModal.classList.remove('flex');
+        imageModalImg.src = '';
+        document.body.style.overflow = '';
+      }
+
+      closeImageModalBtn.addEventListener('click', closeImageModal);
+      imageModalBackdrop.addEventListener('click', closeImageModal);
+
+      // 1. Render Profile Photo if available
+      if (PORTFOLIO_CONFIG.profilePhotoUrl) {
+        const img = document.getElementById('profile-photo-img');
+        const placeholder = document.getElementById('profile-photo-placeholder');
+        img.src = PORTFOLIO_CONFIG.profilePhotoUrl;
+        img.classList.remove('hidden');
+        placeholder.classList.add('hidden');
+      }
+
+      // 2. Render Project Documentation Photos if available
+      function renderProjectPhotos(containerId, photos) {
+        if (!photos || photos.length === 0) return;
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        container.innerHTML = photos.map((photo) => `
+          <figure class="group rounded-xl overflow-hidden border border-slate-200 bg-slate-50 cursor-zoom-in" data-preview-src="${photo.src}" data-preview-caption="${photo.caption || 'Dokumentasi Proyek'}">
+            <div class="overflow-hidden aspect-[16/10] bg-slate-100">
+              <img src="${photo.src}" alt="${photo.caption || 'Dokumentasi Proyek'}" class="w-full h-full object-cover ${photo.position || 'object-center'} group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+            </div>
+            ${photo.caption ? `<figcaption class="px-2.5 py-1.5 text-[11px] text-slate-600 font-medium">${photo.caption}</figcaption>` : ''}
+          </figure>
+        `).join('');
+
+        container.querySelectorAll('[data-preview-src]').forEach((item) => {
+          item.addEventListener('click', () => {
+            openImageModal(item.dataset.previewSrc, item.dataset.previewCaption);
+          });
+        });
+      }
+      renderProjectPhotos('project-01-docs', PORTFOLIO_CONFIG.project01Photos);
+      renderProjectPhotos('project-02-docs', PORTFOLIO_CONFIG.project02Photos);
+
+      // 3. Render Certificate Images if available
+      PORTFOLIO_CONFIG.certificateImages.forEach((imgUrl, idx) => {
+        if (!imgUrl) return;
+        const card = document.querySelector(`[data-cert-index="${idx}"]`);
+        if (!card) return;
+        const wrap = card.querySelector('.cert-img-wrap');
+        const titleEl = card.querySelector('h3');
+        const certTitle = titleEl ? titleEl.textContent.trim() : `Sertifikat ${idx + 1}`;
+        wrap.classList.remove('placeholder-frame', 'p-4');
+        wrap.classList.add('bg-slate-50', 'p-2', 'cursor-zoom-in', 'group');
+        wrap.innerHTML = `<img src="${imgUrl}" alt="${certTitle}" class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300" loading="lazy" />`;
+        wrap.addEventListener('click', () => openImageModal(imgUrl, certTitle));
+      });
+
+      // 4. Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const iconOpen = document.getElementById('menu-icon-open');
+      const iconClose = document.getElementById('menu-icon-close');
+
+      function toggleMobileMenu(forceClose = false) {
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        const shouldClose = forceClose || isOpen;
+        mobileMenu.classList.toggle('hidden', shouldClose);
+        iconOpen.classList.toggle('hidden', !shouldClose);
+        iconClose.classList.toggle('hidden', shouldClose);
+        mobileMenuBtn.setAttribute('aria-expanded', String(!shouldClose));
+      }
+
+      mobileMenuBtn.addEventListener('click', () => toggleMobileMenu());
+      document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+        link.addEventListener('click', () => toggleMobileMenu(true));
+      });
+
+      // 5. Scroll Spy for Active Navbar Link
+      const sections = document.querySelectorAll('main section[id]');
+      const navLinks = document.querySelectorAll('header nav a.nav-link');
+
+      const sectionObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const id = entry.target.getAttribute('id');
+              navLinks.forEach((link) => {
+                const isActive = link.getAttribute('href') === `#${id}`;
+                link.classList.toggle('active', isActive);
+                link.classList.toggle('text-white', isActive);
+                link.classList.toggle('text-white/80', !isActive);
+              });
+            }
+          });
+        },
+        { rootMargin: '-35% 0px -55% 0px' }
+      );
+      sections.forEach((sec) => sectionObserver.observe(sec));
+
+      // 6. Scroll Reveal Animations
+      const revealEls = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      revealEls.forEach((el) => revealObserver.observe(el));
+
+      // 7. Download CV Button (Honest placeholder modal until real PDF is provided)
+      const downloadCvBtn = document.getElementById('download-cv-btn');
+      const cvModal = document.getElementById('cv-modal');
+      const closeCvModalBtn = document.getElementById('close-cv-modal');
+      const cvModalBackdrop = document.getElementById('cv-modal-backdrop');
+
+      function openCvModal() {
+        cvModal.classList.remove('hidden');
+        cvModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeCvModal() {
+        cvModal.classList.add('hidden');
+        cvModal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      downloadCvBtn.addEventListener('click', () => {
+        if (PORTFOLIO_CONFIG.cvPdfUrl) {
+          const link = document.createElement('a');
+          link.href = PORTFOLIO_CONFIG.cvPdfUrl;
+          link.download = PORTFOLIO_CONFIG.cvFileName || 'CV_Aldi_Yudha_Septiana.pdf';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        } else {
+          openCvModal();
+        }
+      });
+
+      closeCvModalBtn.addEventListener('click', closeCvModal);
+      cvModalBackdrop.addEventListener('click', closeCvModal);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          if (!cvModal.classList.contains('hidden')) closeCvModal();
+          if (!imageModal.classList.contains('hidden')) closeImageModal();
+        }
+      });
+
+      // 8. Copy Email Button
+      const copyEmailBtn = document.getElementById('copy-email-btn');
+      copyEmailBtn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(PORTFOLIO_CONFIG.email);
+          const originalText = copyEmailBtn.textContent;
+          copyEmailBtn.textContent = 'Tersalin';
+          setTimeout(() => {
+            copyEmailBtn.textContent = originalText;
+          }, 2000);
+        } catch {
+          window.location.href = `mailto:${PORTFOLIO_CONFIG.email}`;
+        }
+      });
+
+      // 9. HRD Contact Form (Working Email App & WhatsApp Delivery)
+      const form = document.getElementById('hrd-contact-form');
+      const sendViaWaBtn = document.getElementById('send-via-wa-btn');
+      const feedback = document.getElementById('form-feedback');
+
+      function showFeedback(message, isSuccess = true) {
+        feedback.textContent = message;
+        feedback.className = `rounded-xl p-3.5 text-sm font-medium ${isSuccess
+          ? 'bg-emerald-50 text-emerald-800 border border-emerald-200'
+          : 'bg-amber-50 text-amber-800 border border-amber-200'
+          }`;
+        feedback.classList.remove('hidden');
+      }
+
+      function getFormData() {
+        return {
+          name: document.getElementById('sender-name').value.trim(),
+          email: document.getElementById('sender-email').value.trim(),
+          subject: document.getElementById('sender-subject').value.trim(),
+          message: document.getElementById('sender-message').value.trim()
+        };
+      }
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const data = getFormData();
+        if (!data.name || !data.email || !data.subject || !data.message) {
+          showFeedback('Mohon lengkapi seluruh kolom yang bertanda bintang (*).', false);
+          return;
+        }
+
+        const bodyText =
+          `Halo Aldi Yudha Septiana,\n\n` +
+          `${data.message}\n\n` +
+          `---\n` +
+          `Pengirim: ${data.name}\n` +
+          `Email: ${data.email}`;
+
+        const mailtoUrl =
+          `mailto:${PORTFOLIO_CONFIG.email}` +
+          `?subject=${encodeURIComponent(data.subject)}` +
+          `&body=${encodeURIComponent(bodyText)}`;
+
+        showFeedback('Aplikasi email Anda sedang dibuka dengan pesan yang sudah terisi otomatis.', true);
+        window.location.href = mailtoUrl;
+      });
+
+      sendViaWaBtn.addEventListener('click', () => {
+        const data = getFormData();
+        if (!data.name || !data.message) {
+          showFeedback('Mohon isi minimal kolom Nama/Perusahaan dan Pesan untuk mengirim via WhatsApp.', false);
+          return;
+        }
+
+        const waText =
+          `Halo Aldi Yudha Septiana,\n\n` +
+          `Saya ${data.name}${data.email ? ` (${data.email})` : ''}.\n` +
+          `${data.subject ? `Subjek: ${data.subject}\n\n` : '\n'}` +
+          `${data.message}`;
+
+        const waUrl = `https://wa.me/${PORTFOLIO_CONFIG.whatsappNumber}?text=${encodeURIComponent(waText)}`;
+        showFeedback('Membuka WhatsApp dengan pesan yang sudah disiapkan...', true);
+        window.open(waUrl, '_blank', 'noopener,noreferrer');
+      });
+    });
+  </script>
+</body>
+
+</html>
